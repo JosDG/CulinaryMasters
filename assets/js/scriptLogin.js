@@ -15,6 +15,6 @@ btnSignup.addEventListener("click", (e) => {
 });
 
 btnlogin.addEventListener("click", (e) => {
-    window.location.replace("../../index.html");
-    alert("si");
+    //window.location.replace("../../index.html");
+    //alert("si");
 });
