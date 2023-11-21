@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="img/logo2.png" rel="icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styleLogin.css" />
+    <title>CulinaryMasters-Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> 
+	  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="darkmode">
+      <button class="switch" id="Switch">
+        <span><i class="fas fa-sun"></i></span>
+        <span><i class="fas fa-moon"></i></span>
+      </button>
+    </div>
+    <div class="container-form register hide">
+      <div class="information">
+        <div class="info-childs">
+          <center><img src="img/logo3.png" alt=""></center>
+          <h2>Bienvenido</h2>
+          <p>
+            Para unirte a nuestra comunidad por favor Inicia Sesión con tus
+            datos
+          </p>
+          <input type="button" value="Iniciar Sesión" id="sign-in" />
+        </div>
+      </div>
+      <div class="form-information">
+        <div class="form-information-childs">
+          <h2><img src="img/logo.png" alt=""> Crea una Cuenta</h2>
+          <div class="icons">
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-github"></i>
+            <i class="bx bxl-linkedin"></i>
+          </div>
+          <p>Usar Email Para Registrarte</p>
+          <form class="form">
+            <label>
+              <i class="bx bx-user"></i>
+              <input type="text" placeholder="Nombre Completo" />
+            </label>
+            <label>
+              <i class="bx bx-envelope"></i>
+              <input type="email" placeholder="Correo Electronico" />
+            </label>
+            <label>
+              <i class="bx bx-lock"></i>
+              <input type="password" placeholder="Contraseña" />
+            </label>
+            <input type="submit" value="Registrase" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-form login">
+      <div class="information">
+        <div class="info-childs">
+          <center><img src="img/logo3.png" alt=""></center>
+          <h2>¡¡Bienvenido Nuevamente!!</h2>
+          <p>Si aun no tienes una Cuenta por favor Registrese aqui</p>
+          <input type="button" value="Registrarse" id="sign-up" />
+        </div>
+      </div>
+      <div class="form-information">
+        <div class="form-information-childs">
+          <h2><img src="img/logo.png" alt=""> Iniciar Sesión</h2>
+          <div class="icons">
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-github"></i>
+            <i class="bx bxl-linkedin"></i>
+          </div>
+          <p>Iniciar Sesion con una Cuenta</p>
+          <form class="form">
+            <label>
+              <i class="bx bx-envelope"></i>
+              <input type="email" placeholder="Correo Electronico" />
+            </label>
+            <label>
+              <i class="bx bx-lock"></i>
+              <input type="password" placeholder="Contraseña" />
+            </label>
+            <input id="Login" type="submit" value="Iniciar Sesión">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/scriptLogin.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
