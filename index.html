@@ -88,6 +88,26 @@
       font-size: 14px;
       margin: 3px 0;
     }
+    .dato {
+  font-size: 15px;
+  margin: 4px 0;
+  color: #111; /* negro casi puro */
+}
+
+.dato strong {
+  font-weight: 700;
+  color: #000; /* referencia aún más oscura */
+  margin-right: 6px;
+}
+.dato a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+}
+.dato a:hover {
+  text-decoration: underline;
+}
+
 
     @media (max-width: 600px) {
       header {
@@ -106,42 +126,41 @@
 
   <header>
     <img src="LogoJ4-E.png" alt="Logo de la empresa">
-    <h1>Equipo de Trabajo</h1>
+    <h1>Equipo de Trabajo</h1>    
   </header>
-
   <section class="contenedor" id="contenedorContactos">
     <!-- JS insertará los contactos -->
   </section>
-
+  <img src="" height="20px" alt="">
   <script>
     const contactos = [
       {
-        nombre: "Johan Camilo Jiménez Forero",
-        cargo: "Project Managert",
-        telefono: "+57 312 777 7657",
-        correo: "ana.lopez@empresa.com",
-        foto: "https://randomuser.me/api/portraits/women/44.jpg"
+        nombre: "JOHAN CAMILO JIMENEZ FORERO",
+        cargo: "Project Management",
+        telefono: "3127777657",
+        correo: "jcamilojimenez@unicesar.edu.co",
+        foto: "johan.jpg"
       },
       {
-        nombre: "Carlos Pérez",
-        cargo: "Jefe de Ventas",
-        telefono: "310 987 6543",
-        correo: "carlos.perez@empresa.com",
-        foto: "https://randomuser.me/api/portraits/men/32.jpg"
+        nombre: "JUAN DIEGO PEREZ PEREZ",
+        cargo: "Analyst",
+        telefono: "3113403343",
+        correo: "juandiegoperez@unicesar.edu.co",
+        foto: "juan.png"
       },
       {
-        nombre: "Laura Rodríguez",
-        cargo: "Coordinadora de Marketing",
-        telefono: "312 456 7890",
-        correo: "laura.rodriguez@empresa.com",
-        foto: "https://randomuser.me/api/portraits/women/65.jpg"
+        nombre: "JOSE DAVID GIL GIL",
+        cargo: "Developer",
+        telefono: "3145187692",
+        correo: "jdavidgil@unicesar.edu.co",
+        foto: "jose.png"
       },
       {
-        nombre: "Juan García",
-        cargo: "Soporte Técnico",
-        telefono: "313 654 3210",
-        correo: "juan.garcia@empresa.com",
-        foto: "https://randomuser.me/api/portraits/men/47.jpg"
+        nombre: "JESUS MANUEL URIELES RANGEL",
+        cargo: "Designer",
+        telefono: "3138809893",
+        correo: "jmurieles@unicesar.edu.co",
+        foto: "jesu.jpg"
       }
     ];
 
@@ -154,7 +173,8 @@
         <img class="foto" src="${contacto.foto}" alt="Foto de ${contacto.nombre}">
         <div class="nombre">${contacto.nombre}</div>
         <div class="cargo">${contacto.cargo}</div>
-        <div class="dato"><strong>📞</strong> ${contacto.telefono}</div>
+        <div class="dato"><strong><img src="wh.png" height="20px" alt=""></strong> <a href="https://wa.me/${contacto.telefono}"  target="_blank">+57 ${contacto.telefono}</a></div>
+
         <div class="dato"><strong>📧</strong> ${contacto.correo}</div>
       `;
       contenedor.appendChild(div);
